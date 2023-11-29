@@ -1,34 +1,42 @@
+a {
+	text-decoration: none;
+	color: cyan;
+}
+
 body {
-	background-size: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	background-size: cover;
 	background-repeat: no-repeat;
-	background-image: url(Image/Untitled-1.png);
+	background-image: url(Image/buleleng-bali-indo-rumah-zengarden-villa-lovina-picture-1.png);
 	background-attachment: fixed;
-	max-height: 100%;
+	background-position: center;
+
 }
 
 .page-wrapper {
 	position: fixed;
-	margin-top: 20%;
-	margin-left: 40%;
-	margin-right: 30%;
-	height: 50%;
+	margin-top: 200px;
+	height: 40vh;
+	width: 30vw;
 	overflow-y: scroll;
 	transform: skew(50deg, -20deg);
-	animation: horizontal-shaking 0.5s infinite;
 }
 
-@keyframes horizontal-shaking {
-0% { transform: translateX(0) }
-25% { transform: translateX(10px) }
-50% { transform: translateX(-5px) }
-75% { transform: translateX(5px) }
-100% { transform: translateX(0) }
-}
-
-p{
-	color: white;
+.page-wrapper p {
+	color: rgb(255, 255, 255);
 }
 
 h1,h2,h3,h4 {
 	color: white;
+	text-decoration: underline;
+}
+
+@media (max-height:600px)   {
+	.page-wrapper{
+		margin-top: 20%;
+		height: 50%;
+	}
+	
 }
